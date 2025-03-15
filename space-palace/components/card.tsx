@@ -3,7 +3,11 @@
 import { motion } from "framer-motion"
 import type { CardType } from "@/types/game-types"
 import GlitchEffect from "./glitch-effect"
+<<<<<<< HEAD
 import styles from "./card.module.css"
+=======
+import styles from "./card.module.css" // CORRECT: Default import
+>>>>>>> a91c3cf (add initial project setup with Next.js, Tailwind CSS, and essential configurations)
 import SpecialCard from "./special-card"
 
 interface CardProps {

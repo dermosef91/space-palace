@@ -2,7 +2,11 @@
 
 import { motion } from "framer-motion"
 import { HelpCircle, Crown, Zap, ArrowRightCircle, PlayCircle } from "lucide-react"
+<<<<<<< HEAD
 import buttonStyles from "../components/button.module.css"
+=======
+import styles from "../components/button.module.css"
+>>>>>>> a91c3cf (add initial project setup with Next.js, Tailwind CSS, and essential configurations)
 
 interface TutorialProps {
   startGame: () => void
@@ -97,7 +101,11 @@ export default function Tutorial({ startGame }: TutorialProps) {
 
         {/* Start game button */}
         <motion.button
+<<<<<<< HEAD
           className={`mt-6 px-6 py-3 bg-black/70 text-white rounded-lg shadow-lg font-medium transition-all border border-[#FE7B2A] hover:bg-black/80 hover:shadow-[0_0_15px_rgba(254,123,42,0.6)] w-full sm:w-auto ${buttonStyles.buttonShine}`}
+=======
+          className={`mt-6 px-6 py-3 bg-black/70 text-white rounded-lg shadow-lg font-medium transition-all border border-[#FE7B2A] hover:bg-black/80 hover:shadow-[0_0_15px_rgba(254,123,42,0.6)] w-full sm:w-auto ${styles.buttonShine}`}
+>>>>>>> a91c3cf (add initial project setup with Next.js, Tailwind CSS, and essential configurations)
           onClick={startGame}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

@@ -7,7 +7,11 @@ import type { CardType } from "@/types/game-types"
 import Card from "@/components/card"
 import { useState, useEffect, useRef } from "react"
 import { getDisplayRank } from "@/lib/game-utils"
+<<<<<<< HEAD
 import buttonStyles from "../components/button.module.css"
+=======
+import styles from "../components/button.module.css"
+>>>>>>> a91c3cf (add initial project setup with Next.js, Tailwind CSS, and essential configurations)
 import { getHandCardStyle } from "@/lib/card-layout-utils"
 
 // Helper function to check if a card can be played
@@ -286,7 +290,11 @@ export default function PlayerHand({
                     "0 0 35px 15px rgba(254, 123, 42, 0.5)",
                     "0 0 20px 8px rgba(254, 123, 42, 0.3)",
                   ],
+<<<<<<< HEAD
                   opacity: [03, 0.7],
+=======
+                  opacity: [0.3, 0.7],
+>>>>>>> a91c3cf (add initial project setup with Next.js, Tailwind CSS, and essential configurations)
                 }}
                 transition={{
                   duration: 2,
@@ -345,7 +353,11 @@ export default function PlayerHand({
         <div className="flex gap-2">
           {selectedForPlay.length > 0 ? (
             <motion.button
+<<<<<<< HEAD
               className={`px-4 py-2 rounded-md font-light shadow-md border border-[#FE7B2A] transition-all ${buttonStyles.buttonShine}
+=======
+              className={`px-4 py-2 rounded-md font-light shadow-md border border-[#FE7B2A] transition-all ${styles.buttonShine}
+>>>>>>> a91c3cf (add initial project setup with Next.js, Tailwind CSS, and essential configurations)
  ${
    areSelectedCardsPlayable()
      ? "bg-black/70 text-white hover:bg-[#FE7B2A]/80 hover:shadow-[0_0_10px_rgba(254,123,42,0.5)]"
@@ -368,10 +380,17 @@ export default function PlayerHand({
             </motion.button>
           ) : (
             <motion.button
+<<<<<<< HEAD
               className={`px-4 py-2 rounded-md font-light shadow-md border border-[#FE7B2A] transition-all ${buttonStyles.buttonShine}
  ${
    shouldHighlightPickUpButton()
      ? `bg-[#FE7B2A]/80 text-white hover:shadow-[0_0_10px_rgba(254,123,42,0.7)] ${buttonStyles.buttonPulse}`
+=======
+              className={`px-4 py-2 rounded-md font-light shadow-md border border-[#FE7B2A] transition-all ${styles.buttonShine}
+ ${
+   shouldHighlightPickUpButton()
+     ? `bg-[#FE7B2A]/80 text-white hover:shadow-[0_0_10px_rgba(254,123,42,0.7)] ${styles.buttonPulse}`
+>>>>>>> a91c3cf (add initial project setup with Next.js, Tailwind CSS, and essential configurations)
      : "bg-black/70 text-white hover:bg-black/80 hover:shadow-[0_0_10px_rgba(254,123,42,0.5)]"
  }`}
               onClick={pickUpPile}
@@ -500,7 +519,11 @@ export default function PlayerHand({
       {isSwapping && finishSwapping && (
         <div className="flex gap-2 mt-4">
           <motion.button
+<<<<<<< HEAD
             className={`px-4 py-2 bg-black/70 text-white rounded-md font-light shadow-md border border-[#FE7B2A] hover:bg-black/80 hover:shadow-[0_0_10px_rgba(254,123,42,0.5)] transition-all ${buttonStyles.buttonShine}`}
+=======
+            className={`px-4 py-2 bg-black/70 text-white rounded-md font-light shadow-md border border-[#FE7B2A] hover:bg-black/80 hover:shadow-[0_0_10px_rgba(254,123,42,0.5)] transition-all ${styles.buttonShine}`}
+>>>>>>> a91c3cf (add initial project setup with Next.js, Tailwind CSS, and essential configurations)
             onClick={finishSwapping}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -518,7 +541,11 @@ export default function PlayerHand({
         <div className="flex gap-2 mt-4">
           {selectedForPlay.length > 0 ? (
             <motion.button
+<<<<<<< HEAD
               className={`px-4 py-2 rounded-md font-light shadow-md border border-[#FE7B2A] transition-all ${buttonStyles.buttonShine}
+=======
+              className={`px-4 py-2 rounded-md font-light shadow-md border border-[#FE7B2A] transition-all ${styles.buttonShine}
+>>>>>>> a91c3cf (add initial project setup with Next.js, Tailwind CSS, and essential configurations)
  ${
    areSelectedCardsPlayable()
      ? "bg-black/70 text-white hover:bg-[#FE7B2A]/80 hover:shadow-[0_0_10px_rgba(254,123,42,0.5)]"
@@ -544,7 +571,11 @@ export default function PlayerHand({
             // (i.e., we're in a situation where the player has no hand cards but still needs to pick up)
             pile.length > 0 && (
               <motion.button
+<<<<<<< HEAD
                 className={`px-4 py-2 bg-black/70 text-white rounded-md font-light shadow-md border border-[#FE7B2A] hover:bg-black/80 hover:shadow-[0_0_10px_rgba(254,123,42,0.5)] transition-all ${buttonStyles.buttonShine}`}
+=======
+                className={`px-4 py-2 bg-black/70 text-white rounded-md font-light shadow-md border border-[#FE7B2A] hover:bg-black/80 hover:shadow-[0_0_10px_rgba(254,123,42,0.5)] transition-all ${styles.buttonShine}`}
+>>>>>>> a91c3cf (add initial project setup with Next.js, Tailwind CSS, and essential configurations)
                 onClick={pickUpPile}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
