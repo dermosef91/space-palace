@@ -1,0 +1,47 @@
+.buttonShine {
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonShine::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(30deg);
+  transition: transform 0.5s;
+  pointer-events: none;
+}
+
+.buttonShine:hover::after {
+  animation: shine 1.5s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(30deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(30deg);
+  }
+}
+
+.buttonPulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(254, 123, 42, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(254, 123, 42, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(254, 123, 42, 0);
+  }
+}
+
